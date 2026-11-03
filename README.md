@@ -5,7 +5,7 @@
 [![Dashboard online](https://img.shields.io/badge/dashboard-online-2f9e44)](https://bara-putri-cempo.vercel.app)
 [![Tes](https://img.shields.io/badge/tes-21%20lulus-2f9e44)](tests/test_risk.py)
 [![Data](https://img.shields.io/badge/data%20demo-simulasi-f08c00)](#status-dan-langkah-berikutnya)
-[![UNS Innovation Hackathon 2026](https://img.shields.io/badge/UNS%20Innovation%20Hackathon-2026-cf5a26)](#)
+[![Python](https://img.shields.io/badge/python-3.12-2e5aa7)](requirements.txt)
 
 ![Demo BARA: kamera menyorot status blok, kenaikan status D1, dan perkiraan kedalaman sumber panas](docs/bara-demo.gif)
 
@@ -164,5 +164,3 @@ Jam shift untuk ringkasan Telegram ada di `data/shifts.json` (daftar `{"name", "
 - Environment Agency (2007), laporan SC010066. Ambang suhu di dalam timbunan, Tabel 23.
 - Peraturan Menteri PU No. 03/PRT/M/2013, Lampiran III, Tabel 10. Kelas suhu TPA.
 - Open-Meteo Archive API, data cuaca 2015 sampai 2026. Indeks Drought Code dan FFMC dihitung dengan xclim 0.62.0.
-
-BARA dibuat untuk UNS Innovation Hackathon 2026, sub-tema C.

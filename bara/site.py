@@ -1,7 +1,7 @@
 """Data lokasi TPA Putri Cempo dan kejadian kebakaran yang tercatat.
 
 Koordinat dan bounding box dari OpenStreetMap way 1221584229 (landuse=landfill), diambil 2026-10-30.
-Tanggal kebakaran dari tangkapan berita di k1/research/uns-hackathon-2026-topic/sources/solo/.
+Tanggal kebakaran dari berita lokal (Metro TV, iNews, detikJateng).
 """
 from dataclasses import dataclass
 from datetime import date

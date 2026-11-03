@@ -1,0 +1,3 @@
+OneWire
+DallasTemperature
+DHT sensor library for ESPx

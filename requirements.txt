@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+requests
+tabulate
+xclim==0.62.0
+fastapi
+uvicorn[standard]
+pytest

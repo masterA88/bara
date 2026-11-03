@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+web/node_modules/
+web/.next/
+web/public/maplibre/
+proposal/video/raw/*.webm
+.DS_Store
+# Catatan internal dan berkas proposal tidak ikut ke repo
+BIBLE.md
+bible/
+proposal/
+# Artefak build firmware yang besar (bisa dibuat ulang); .bin tetap ikut untuk Wokwi
+firmware/bara_node/build/
+firmware/**/*.elf
+firmware/**/*.map

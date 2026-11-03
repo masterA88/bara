@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "author": "Hilmi",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "board-ds18b20",
+      "id": "p10",
+      "top": -120,
+      "left": 120,
+      "attrs": {
+        "temperature": "30"
+      }
+    },
+    {
+      "type": "board-ds18b20",
+      "id": "p30",
+      "top": -120,
+      "left": 200,
+      "attrs": {
+        "temperature": "38"
+      }
+    },
+    {
+      "type": "board-ds18b20",
+      "id": "p60",
+      "top": -120,
+      "left": 280,
+      "attrs": {
+        "temperature": "42"
+      }
+    },
+    {
+      "type": "board-ds18b20",
+      "id": "p100",
+      "top": -120,
+      "left": 360,
+      "attrs": {
+        "temperature": "48"
+      }
+    },
+    {
+      "type": "board-ds18b20",
+      "id": "p150",
+      "top": -120,
+      "left": 440,
+      "attrs": {
+        "temperature": "55"
+      }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht",
+      "top": 120,
+      "left": 260,
+      "attrs": {
+        "temperature": "31",
+        "humidity": "60"
+      }
+    },
+    {
+      "type": "wokwi-gas-sensor",
+      "id": "mq",
+      "top": 220,
+      "left": 260,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "heater",
+      "top": 220,
+      "left": 420,
+      "attrs": {
+        "color": "orange",
+        "label": "pemanas MQ"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rled",
+      "top": 300,
+      "left": 420,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "p30:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "p30:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "p30:DQ",
+      "esp:16",
+      "green",
+      []
+    ],
+    [
+      "p60:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "p60:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "p60:DQ",
+      "esp:17",
+      "green",
+      []
+    ],
+    [
+      "p100:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "p100:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "p100:DQ",
+      "esp:18",
+      "green",
+      []
+    ],
+    [
+      "p150:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "p150:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "p150:DQ",
+      "esp:19",
+      "green",
+      []
+    ],
+    [
+      "dht:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "dht:GND",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "dht:SDA",
+      "esp:15",
+      "orange",
+      []
+    ],
+    [
+      "mq:VCC",
+      "esp:5V",
+      "red",
+      []
+    ],
+    [
+      "mq:GND",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "mq:AOUT",
+      "esp:34",
+      "purple",
+      []
+    ],
+    [
+      "p10:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "p10:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "p10:DQ",
+      "esp:4",
+      "green",
+      []
+    ],
+    [
+      "esp:25",
+      "heater:A",
+      "orange",
+      []
+    ],
+    [
+      "heater:C",
+      "rled:1",
+      "black",
+      []
+    ],
+    [
+      "rled:2",
+      "esp:GND.2",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

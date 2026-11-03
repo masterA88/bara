@@ -15,3 +15,4 @@ proposal/
 firmware/bara_node/build/
 firmware/**/*.elf
 firmware/**/*.map
+.tmp/
